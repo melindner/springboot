@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HelloName {
    
-    @PostMapping(value="hello-name")
+    @PostMapping(value="helloName")
     public ModelAndView postHelloName(@RequestParam String nome) {
         ModelAndView modelAndView = new ModelAndView("hello-name");
 
