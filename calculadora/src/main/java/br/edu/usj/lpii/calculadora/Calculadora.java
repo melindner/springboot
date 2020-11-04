@@ -22,18 +22,17 @@ import org.springframework.web.servlet.ModelAndView;
             Double num1Double = Double.valueOf(num1);
             Double num2Double = Double.valueOf(num2);
             String operacaoString = String.valueOf(operacao);
-            if (operacaoString.equals("+"))
-            {
+            if (operacaoString.equals("+")){
                 resultado = num1Double+num2Double;
-                calculo = num1 + " + " + num2 + "=" + resultado;
+             
             }
             else if (operacaoString.equals("-")){
                 resultado = num1Double-num2Double;
-                calculo = num1 + " - " + num2 + "=" + resultado;
+                
             }
             else if (operacaoString.equals("*")){
                 resultado = num1Double*num2Double;
-                calculo = num1 + " * " + num2 + "=" + resultado;
+             
             }
             else if (operacaoString.equals("/")){
                 resultado = num1Double/num2Double;
@@ -42,7 +41,6 @@ import org.springframework.web.servlet.ModelAndView;
             
             calculo = num1 + operacao + num2 + "=" + resultado;
            
-
             modelAndView.addObject("calculo", calculo);
 
             return modelAndView;
